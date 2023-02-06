@@ -55,7 +55,7 @@ class MyHomePage extends StatelessWidget {
           child: Container(
             alignment: Alignment.center,
             margin: const EdgeInsets.symmetric(horizontal: 20),
-            height: 150,
+            height: 200,
             decoration: BoxDecoration(
                 color: Colors.grey[200],
                 borderRadius: BorderRadius.circular(12)),
