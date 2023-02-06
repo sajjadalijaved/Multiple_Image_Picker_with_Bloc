@@ -5,6 +5,7 @@ abstract class ImagePackerEvent {}
 
 class SelectMultipleImageEvent extends ImagePackerEvent{
 final List<XFile> images;
+
 SelectMultipleImageEvent(this.images); 
 }
 
