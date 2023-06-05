@@ -12,14 +12,15 @@ class ImagePackerBloc extends Bloc<ImagePackerEvent, ImagePackerState> {
   ImagePackerBloc() : super(const ImagePackerState()) {
     on<SelectMultipleImageEvent>((_onSelectMultipleImage));
     on<UnSelectMultipleImageEvent>((_unSelectMultipleImage));
-
   }
 
-  Future<void> _onSelectMultipleImage(SelectMultipleImageEvent event,Emitter<ImagePackerState> emit)async {
-        emit(state.copywith(images: event.images));
-      }
+  Future<void> _onSelectMultipleImage(
+      SelectMultipleImageEvent event, Emitter<ImagePackerState> emit) async {
+    emit(state.copywith(images: event.images));
+  }
 
-        Future<void> _unSelectMultipleImage(UnSelectMultipleImageEvent event,Emitter<ImagePackerState> emit)async {
-        emit(state.copywith(images: []));
-      }
+  Future<void> _unSelectMultipleImage(
+      UnSelectMultipleImageEvent event, Emitter<ImagePackerState> emit) async {
+    emit(state.copywith(images: []));
+  }
 }

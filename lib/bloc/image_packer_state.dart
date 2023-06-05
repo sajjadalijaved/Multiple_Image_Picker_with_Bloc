@@ -6,6 +6,7 @@ part of 'image_packer_bloc.dart';
   const ImagePackerState({this.images});
 
   ImagePackerState copywith({List<XFile>? images}) => ImagePackerState(images: images ?? this.images);
+
  }
 
 
